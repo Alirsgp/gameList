@@ -9,10 +9,16 @@
 import SwiftUI
 
 struct ContentView : View {
+    
+    @State private var currentWord = ""
+    
     var body: some View {
-        HStack {
-        Text("Hello World")
-        Text("HIII")
+        NavigationView {
+            VStack {
+                Text("Hello World")
+                Spacer()
+                Text("LOOOL")
+            }.navigationBarTitle(Text("STATIC"))
         }
     }
 }

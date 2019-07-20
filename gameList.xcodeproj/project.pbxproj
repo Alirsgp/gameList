@@ -13,6 +13,7 @@
 		D7719C4D22E29B3E00533F0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7719C4C22E29B3E00533F0A /* Assets.xcassets */; };
 		D7719C5022E29B3E00533F0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7719C4F22E29B3E00533F0A /* Preview Assets.xcassets */; };
 		D7719C5322E29B3E00533F0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7719C5122E29B3E00533F0A /* LaunchScreen.storyboard */; };
+		D7719C5B22E2A1C600533F0A /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = D7719C5A22E2A1C500533F0A /* words.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		D7719C4F22E29B3E00533F0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D7719C5222E29B3E00533F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7719C5422E29B3E00533F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7719C5A22E2A1C500533F0A /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		D79382FE22E300B70008B33D /* gameList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = gameList.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +59,14 @@
 		D7719C4522E29B3700533F0A /* gameList */ = {
 			isa = PBXGroup;
 			children = (
+				D79382FE22E300B70008B33D /* gameList.entitlements */,
 				D7719C4622E29B3700533F0A /* AppDelegate.swift */,
 				D7719C4822E29B3700533F0A /* SceneDelegate.swift */,
 				D7719C4A22E29B3700533F0A /* ContentView.swift */,
 				D7719C4C22E29B3E00533F0A /* Assets.xcassets */,
 				D7719C5122E29B3E00533F0A /* LaunchScreen.storyboard */,
 				D7719C5422E29B3E00533F0A /* Info.plist */,
+				D7719C5A22E2A1C500533F0A /* words.txt */,
 				D7719C4E22E29B3E00533F0A /* Preview Content */,
 			);
 			path = gameList;
@@ -135,6 +140,7 @@
 			files = (
 				D7719C5322E29B3E00533F0A /* LaunchScreen.storyboard in Resources */,
 				D7719C5022E29B3E00533F0A /* Preview Assets.xcassets in Resources */,
+				D7719C5B22E2A1C600533F0A /* words.txt in Resources */,
 				D7719C4D22E29B3E00533F0A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = gameList/gameList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "gameList/Preview\\ Content";
 				DEVELOPMENT_TEAM = 2NPE543ARD;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = InstaDate.gameList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = gameList/gameList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "gameList/Preview\\ Content";
 				DEVELOPMENT_TEAM = 2NPE543ARD;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = InstaDate.gameList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
